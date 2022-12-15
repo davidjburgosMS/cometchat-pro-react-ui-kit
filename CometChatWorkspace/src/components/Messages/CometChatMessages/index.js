@@ -1291,12 +1291,13 @@ class CometChatMessages extends React.PureComponent {
 					className='main__chat'
 					dir={Translator.getDirection(this.props.lang)}
 				>
-					<CometChatMessageHeader
+					{/* commented chat header for full screen chat view */}
+					{/* <CometChatMessageHeader
 						lang={this.props.lang}
 						sidebar={this.props.sidebar}
 						viewdetail={this.props.viewdetail === false ? false : true}
 						actionGenerated={this.actionHandler}
-					/>
+					/> */}
 					{messageList}
 					{liveReactionView}
 					{messageComposer}
